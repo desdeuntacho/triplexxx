@@ -17,7 +17,7 @@ body h1 {
   margin: 0px 0px 0px 0px;
 }
 
-body a, body h1, body i {
+body a, body h1, body h2, body i, body p {
   color: #1c3764;
 }
 
@@ -79,31 +79,6 @@ body main .row .titulos h1 {
   bottom: 0px;
 }
 
-body main .row .logo {
-  width: 500px;
-  height: 500px;
-  background: url(img/sprite-full.png) no-repeat;
-  display: inline-block;
-  position: relative;
-}
-
-body main .row .logo span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: url(img/sprite-full.png) no-repeat;
-  background-position: 0 -2040px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms ease-in-out;
-  transition: opacity 500ms ease-in-out;
-}
-
-body main .row .logo span:hover {
-  opacity: 1;
-}
-
 body main .row .bg-full {
   width: 500px;
   height: 500px;
@@ -111,57 +86,6 @@ body main .row .bg-full {
   display: inline-block;
   position: relative;
   z-index: 0;
-}
-
-body main .row .bg-full .bg-1 span {
-  background: url(img/sprite-full.png) no-repeat;
-  background-position: 0 -510px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: opacity 500ms ease-in-out;
-  transition: opacity 500ms ease-in-out;
-}
-
-body main .row .bg-full .bg-1 span:hover {
-  opacity: 1;
-}
-
-body main .row .bg-full .bg-2 span {
-  background: url(img/sprite-full.png) no-repeat;
-  background-position: -167px -1020px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: opacity 500ms ease-in-out;
-  transition: opacity 500ms ease-in-out;
-}
-
-body main .row .bg-full .bg-2 span:hover {
-  opacity: 1;
-}
-
-body main .row .bg-full .bg-3 span {
-  background: url(img/sprite-full.png) no-repeat;
-  background-position: -333px -1530px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: opacity 500ms ease-in-out;
-  transition: opacity 500ms ease-in-out;
-}
-
-body main .row .bg-full .bg-3 span:hover {
-  opacity: 1;
 }
 
 body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg-full .bg-3 {
@@ -173,9 +97,23 @@ body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg
   cursor: pointer;
 }
 
+body main .row.imagen {
+  margin-top: 75px;
+  margin-bottom: 40px;
+}
+
+body main .row.imagen h2 a {
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+body main .row.imagen h2 a:hover, body main .row.imagen h2 a:focus {
+  color: #d99fc7;
+}
+
 body footer {
-  border-top: 5px solid black;
-  margin-top: 15px;
+  border-top: 5px solid #1c3764;
+  margin-top: 35px;
   margin-bottom: 15px;
 }
 
