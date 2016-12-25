@@ -1,0 +1,188 @@
+* {
+  outline: 0px solid cyan;
+}
+
+body {
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Roboto Slab';
+  line-height: 1.5;
+}
+
+body h1 {
+  font-size: 40px;
+  display: inline-block;
+  line-height: 40px;
+  margin: 0px 0px 0px 0px;
+}
+
+body a, body h1, body i {
+  color: #1c3764;
+}
+
+body header {
+  margin-top: 25px;
+}
+
+body header .col-xs-12 .epigrafe {
+  font-style: italic;
+  line-height: 62px;
+  margin-bottom: 0px;
+}
+
+body header .col-xs-12 a {
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+}
+
+body header .col-xs-12 a:hover, body header .col-xs-12 a:focus {
+  background-color: white;
+}
+
+body header .col-xs-12 i {
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+body header .col-xs-12 i:hover, body header .col-xs-12 i:focus {
+  color: #d99fc7;
+}
+
+body main {
+  margin-bottom: 30px;
+}
+
+body main .row {
+  margin-bottom: 15px;
+}
+
+body main .row p {
+  font-style: italic;
+  line-height: 2;
+  display: block;
+  text-align: justify;
+}
+
+body main .row .titulos {
+  position: relative;
+  height: 60px;
+}
+
+body main .row .titulos h1 {
+  display: none;
+  position: absolute;
+  line-height: 60px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+body main .row .logo {
+  width: 500px;
+  height: 500px;
+  background: url(img/sprite-full.png) no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+body main .row .logo span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(img/sprite-full.png) no-repeat;
+  background-position: 0 -2040px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+body main .row .logo span:hover {
+  opacity: 1;
+}
+
+body main .row .bg-full {
+  width: 500px;
+  height: 500px;
+  background: url("img/sprite-full.png") no-repeat;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+body main .row .bg-full .bg-1 span {
+  background: url(img/sprite-full.png) no-repeat;
+  background-position: 0 -510px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+body main .row .bg-full .bg-1 span:hover {
+  opacity: 1;
+}
+
+body main .row .bg-full .bg-2 span {
+  background: url(img/sprite-full.png) no-repeat;
+  background-position: -167px -1020px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+body main .row .bg-full .bg-2 span:hover {
+  opacity: 1;
+}
+
+body main .row .bg-full .bg-3 span {
+  background: url(img/sprite-full.png) no-repeat;
+  background-position: -333px -1530px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+body main .row .bg-full .bg-3 span:hover {
+  opacity: 1;
+}
+
+body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg-full .bg-3 {
+  position: relative;
+  float: left;
+  z-index: 100;
+  width: 33.33%;
+  height: 100%;
+  cursor: pointer;
+}
+
+body footer {
+  border-top: 5px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body footer .row {
+  margin-top: 20px;
+}
+
+body footer section p {
+  padding: 0px 20px;
+}
