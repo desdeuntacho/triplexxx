@@ -23,45 +23,54 @@ body a, body h1, body h2, body i, body p {
 
 body header {
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-body header .col-xs-12 .epigrafe {
+body header .row .epigrafe {
   font-style: italic;
   line-height: 62px;
   margin-bottom: 0px;
 }
 
-body header .col-xs-12 a {
+body header .row a {
   -webkit-transition: color 400ms;
   transition: color 400ms;
 }
 
-body header .col-xs-12 a:hover, body header .col-xs-12 a:focus {
+body header .row a:hover, body header .row a:focus {
   background-color: white;
 }
 
-body header .col-xs-12 i {
+body header .row i {
   -webkit-transition: color 500ms;
   transition: color 500ms;
 }
 
-body header .col-xs-12 i:hover, body header .col-xs-12 i:focus {
+body header .row i:hover, body header .row i:focus {
   color: #d99fc7;
 }
 
+body header .row .titulos {
+  position: relative;
+  height: 80px;
+}
+
+body header .row .titulos h1 {
+  display: none;
+  position: absolute;
+  line-height: 80px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
 body main {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 body main .row {
   margin-bottom: 15px;
-}
-
-body main .row p {
-  font-style: italic;
-  line-height: 2;
-  display: block;
-  text-align: justify;
 }
 
 body main .row .titulos {
@@ -97,6 +106,17 @@ body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg
   cursor: pointer;
 }
 
+body main .row.texto h2 {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+body main .row.texto p {
+  line-height: 1.8;
+  display: block;
+  text-align: justify;
+}
+
 body main .row.imagen {
   margin-top: 75px;
   margin-bottom: 40px;
@@ -111,9 +131,14 @@ body main .row.imagen h2 a:hover, body main .row.imagen h2 a:focus {
   color: #d99fc7;
 }
 
+body main .row.sede {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
 body footer {
   border-top: 5px solid #1c3764;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -123,4 +148,84 @@ body footer .row {
 
 body footer section p {
   padding: 0px 20px;
+}
+
+body.home {
+  overflow: hidden;
+}
+
+.calendar {
+  text-align: center;
+}
+
+.calendar header {
+  position: relative;
+}
+
+.calendar header h2 {
+  text-transform: uppercase;
+}
+
+.calendar table {
+  margin: auto;
+}
+
+.calendar table thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.calendar table tbody {
+  color: #7c8a95;
+}
+
+.calendar table tbody td:hover {
+  border: 2px solid #1c3764;
+}
+
+.calendar table td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+}
+
+.calendar .prev-month, .calendar .next-month {
+  color: #cbd1d2;
+}
+
+.calendar .prev-month:hover, .calendar .next-month:hover {
+  border: 2px solid #cbd1d2;
+}
+
+.calendar .current-day {
+  background: #1c3764;
+  color: #f9f9f9;
+}
+
+.calendar .event {
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar .event:after {
+  background: #1c3764;
+  border-radius: 50%;
+  bottom: .5em;
+  display: block;
+  content: '';
+  height: .5em;
+  left: 50%;
+  margin: -.25em 0 0 -.25em;
+  position: absolute;
+  width: .5em;
+}
+
+.calendar .event.current-day:after {
+  background: #f9f9f9;
 }

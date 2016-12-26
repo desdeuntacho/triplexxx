@@ -20,25 +20,24 @@ $(function () {
 	var segunda = $('.bg-2');
 	var tercera = $('.bg-3');
 
-	primera.mouseenter(function () {
-	    if(texto.css('display') == 'none') texto.css('opacity', '0');
-	    texto.stop(true).show().animate({opacity: 1}, 400, function () { $(this).css('opacity', ''); });
-	    setTimeout(function(){
-	        texto.stop(true).fadeOut(200);
-	    }, 500);
+	$(primera).hover(function() {
+    $(texto).stop(true, true).fadeTo(800, 1);
+	},
+	function() {
+	    $(texto).stop(true, true).fadeTo(400, 0);
 	});
-	segunda.mouseenter(function(){
-	    if(imagen.css('display') == 'none') imagen.css('opacity', '0');
-	    imagen.stop(true).show().animate({opacity: 1}, 400, function () { $(this).css('opacity', ''); });
-	    setTimeout(function(){
-	        imagen.stop(true).fadeOut(200);
-	    }, 500);
+
+	$(segunda).hover(function() {
+	    $(imagen).stop(true, true).fadeTo(800, 1); //stop previous animations
+	},
+	function() {
+	    $(imagen).stop(true, true).fadeTo(400, 0);
 	});
-	tercera.mouseenter(function(){
-			if(agenda.css('display') == 'none') agenda.css('opacity', '0');
-			agenda.stop(true).show().animate({opacity: 1}, 400, function () { $(this).css('opacity', ''); });
-			setTimeout(function(){
-					agenda.stop(true).fadeOut(200);
-			}, 500);
+
+	$(tercera).hover(function() {
+			$(agenda).stop(true, true).fadeTo(800, 1); //stop previous animations
+	},
+	function() {
+			$(agenda).stop(true, true).fadeTo(400, 0);
 	});
 });
