@@ -42,8 +42,8 @@ body header .row a:hover, body header .row a:focus {
 }
 
 body header .row i {
-  -webkit-transition: color 500ms;
-  transition: color 500ms;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
 }
 
 body header .row i:hover, body header .row i:focus {
@@ -123,8 +123,8 @@ body main .row.imagen {
 }
 
 body main .row.imagen h2 a {
-  -webkit-transition: color 500ms;
-  transition: color 500ms;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
 }
 
 body main .row.imagen h2 a:hover, body main .row.imagen h2 a:focus {
@@ -146,7 +146,65 @@ body footer .row {
   margin-top: 20px;
 }
 
-body footer section p {
+body footer .row a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+body footer .row a:hover h1 {
+  color: #d99fc7;
+}
+
+body footer .row a:hover .logo span {
+  opacity: 1;
+}
+
+body footer .row a .logo {
+  width: 68px;
+  height: 68px;
+  margin: 0px;
+  background: url(img/logo-sprite.png) no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+body footer .row a .logo span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(img/logo-sprite.png) no-repeat;
+  background-position: -68px 0px;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+body footer .row a .logo span:hover {
+  opacity: 1;
+}
+
+body footer .row a h1 {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  -webkit-transition: color 400ms ease-in-out;
+  transition: color 400ms ease-in-out;
+}
+
+body footer .row a h1:hover, body footer .row a h1:focus {
+  color: #d99fc7;
+}
+
+body footer .row section p {
   padding: 0px 20px;
 }
 
@@ -172,6 +230,7 @@ body.home {
 
 .calendar table thead {
   font-weight: 600;
+  color: #1c3764;
   text-transform: uppercase;
 }
 
