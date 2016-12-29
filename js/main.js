@@ -28,16 +28,16 @@ $(function () {
 	});
 
 	$(segunda).hover(function() {
-	    $(imagen).stop(true, true).fadeTo(800, 1); //stop previous animations
+	    $(agenda).stop(true, true).fadeTo(800, 1); //stop previous animations
 	},
 	function() {
-	    $(imagen).stop(true, true).fadeTo(400, 0);
+	    $(agenda).stop(true, true).fadeTo(400, 0);
 	});
 
 	$(tercera).hover(function() {
-			$(agenda).stop(true, true).fadeTo(800, 1); //stop previous animations
+			$(imagen).stop(true, true).fadeTo(800, 1); //stop previous animations
 	},
 	function() {
-			$(agenda).stop(true, true).fadeTo(400, 0);
+			$(imagen).stop(true, true).fadeTo(400, 0);
 	});
 });

@@ -10,14 +10,7 @@ body {
   line-height: 1.5;
 }
 
-body h1 {
-  font-size: 40px;
-  display: inline-block;
-  line-height: 40px;
-  margin: 0px 0px 0px 0px;
-}
-
-body a, body h1, body h2, body i, body p {
+body a, body h1, body h2, body h3, body i, body p {
   color: #1c3764;
 }
 
@@ -26,33 +19,28 @@ body header {
   margin-bottom: 10px;
 }
 
-body header .row .epigrafe {
+body header .row .epigrafe a {
+  font-size: 2.5em;
   font-style: italic;
   line-height: 62px;
-  margin-bottom: 0px;
+  margin-left: 30px;
+  -webkit-transition: color 400ms ease-in-out;
+  transition: color 400ms ease-in-out;
 }
 
-body header .row a {
-  -webkit-transition: color 400ms;
-  transition: color 400ms;
-}
-
-body header .row a:hover, body header .row a:focus {
-  background-color: white;
-}
-
-body header .row i {
-  -webkit-transition: color 400ms;
-  transition: color 400ms;
-}
-
-body header .row i:hover, body header .row i:focus {
+body header .row .epigrafe a:hover, body header .row .epigrafe a:focus {
   color: #d99fc7;
 }
 
 body header .row .titulos {
   position: relative;
   height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  body header .row .titulos {
+    display: none;
+  }
 }
 
 body header .row .titulos h1 {
@@ -63,6 +51,36 @@ body header .row .titulos h1 {
   right: 0px;
   left: 0px;
   bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  body header .row li {
+    float: right;
+    margin-right: 25px;
+  }
+}
+
+body header .row li i {
+  -webkit-transition: color 400ms ease-in-out;
+  transition: color 400ms ease-in-out;
+}
+
+body header .row li i:hover, body header .row li i:focus {
+  color: #d99fc7;
+}
+
+@media (min-width: 768px) {
+  body header .row .iconos1 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body header .row .iconos2 {
+    display: none;
+  }
 }
 
 body main {
@@ -111,18 +129,59 @@ body main .row.texto h2 {
   text-decoration: underline;
 }
 
-body main .row.texto p {
-  line-height: 1.8;
-  display: block;
+body main .row.texto .iden p {
+  line-height: 1.5;
   text-align: justify;
 }
 
+body main .row.texto .def p {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body main .row.texto .def p:nth-child(odd) {
+  font-style: italic;
+  color: #d99fc7;
+}
+
+body main .row.texto .def p:first-child {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #1c3764;
+}
+
+body main .row.texto .convocatoria {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+body main .row.texto .convocatoria h2 {
+  text-decoration: none;
+  text-align: center;
+}
+
+body main .row.texto .convocatoria h2 a {
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+}
+
+body main .row.texto .convocatoria h2 a:hover, body main .row.texto .convocatoria h2 a:focus {
+  color: #d99fc7;
+}
+
 body main .row.imagen {
-  margin-top: 75px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
+body main .row.imagen h2 {
+  text-transform: uppercase;
+}
+
 body main .row.imagen h2 a {
+  color: white;
   -webkit-transition: color 400ms;
   transition: color 400ms;
 }
@@ -137,13 +196,21 @@ body main .row.sede {
 }
 
 body footer {
-  border-top: 5px solid #1c3764;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
 body footer .row {
-  margin-top: 20px;
+  margin-top: 0px;
+}
+
+body footer .row .pie h2 {
+  text-align: center;
+}
+
+body footer .row .pie p {
+  text-align: center;
+  font-size: 24px;
 }
 
 body footer .row a {
@@ -167,32 +234,6 @@ body footer .row a:hover .logo span {
   opacity: 1;
 }
 
-body footer .row a .logo {
-  width: 68px;
-  height: 68px;
-  margin: 0px;
-  background: url(img/logo-sprite.png) no-repeat;
-  display: inline-block;
-  position: relative;
-}
-
-body footer .row a .logo span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: url(img/logo-sprite.png) no-repeat;
-  background-position: -68px 0px;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
-}
-
-body footer .row a .logo span:hover {
-  opacity: 1;
-}
-
 body footer .row a h1 {
   margin-left: 20px;
   margin-bottom: 0px;
@@ -208,8 +249,20 @@ body footer .row section p {
   padding: 0px 20px;
 }
 
-body.home {
-  overflow: hidden;
+body.home main {
+  margin-bottom: 0px;
+}
+
+body.home footer {
+  margin-top: 0px;
+  margin-top: 0px;
+}
+
+main.dulce {
+  margin-top: 30px;
+  height: 600px;
+  background: url(img/dulce.jpg) top no-repeat;
+  background-size: cover;
 }
 
 .calendar {
