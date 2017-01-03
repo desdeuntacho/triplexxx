@@ -62,13 +62,17 @@ body header .row .titulos h1 {
   }
 }
 
+body header .row li a:hover, body header .row li a:focus {
+  background-color: white;
+}
+
+body header .row li a:hover i, body header .row li a:focus i {
+  color: #d99fc7;
+}
+
 body header .row li i {
   -webkit-transition: color 400ms ease-in-out;
   transition: color 400ms ease-in-out;
-}
-
-body header .row li i:hover, body header .row li i:focus {
-  color: #d99fc7;
 }
 
 @media (min-width: 768px) {
@@ -150,6 +154,22 @@ body main .row.texto .def p:first-child {
   margin-top: 25px;
   font-size: 16px;
   color: #1c3764;
+}
+
+body main .row.texto .prem span {
+  text-decoration: underline;
+}
+
+body main .row.texto .prem a {
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body main .row.texto .prem a:hover, body main .row.texto .prem a:focus {
+  color: #d99fc7;
+  text-decoration: none;
 }
 
 body main .row.texto .convocatoria {
@@ -291,10 +311,6 @@ main.dulce {
   color: #7c8a95;
 }
 
-.calendar table tbody td:hover {
-  border: 2px solid #1c3764;
-}
-
 .calendar table td {
   border: 2px solid transparent;
   border-radius: 50%;
@@ -325,6 +341,10 @@ main.dulce {
   position: relative;
 }
 
+.calendar .event:hover {
+  border: 2px solid #1c3764;
+}
+
 .calendar .event:after {
   background: #1c3764;
   border-radius: 50%;
@@ -340,4 +360,128 @@ main.dulce {
 
 .calendar .event.current-day:after {
   background: #f9f9f9;
+}
+
+.calendar .event.libros a {
+  color: #8A2BE2;
+}
+
+.calendar .event.libros:hover {
+  border: 2px solid #8A2BE2;
+}
+
+.calendar .event.libros:after {
+  background: #8A2BE2;
+}
+
+.calendar .event.bingo a {
+  color: #DC143C;
+}
+
+.calendar .event.bingo:hover {
+  border: 2px solid #DC143C;
+}
+
+.calendar .event.bingo:after {
+  background: #DC143C;
+}
+
+.calendar .event.banquete a {
+  color: #FF7F50;
+}
+
+.calendar .event.banquete:hover {
+  border: 2px solid #FF7F50;
+}
+
+.calendar .event.banquete:after {
+  background: #FF7F50;
+}
+
+.calendar .event.escritura a {
+  color: #228B22;
+}
+
+.calendar .event.escritura:hover {
+  border: 2px solid #228B22;
+}
+
+.calendar .event.escritura:after {
+  background: #228B22;
+}
+
+.calendar .event.dinamicas a {
+  color: #008080;
+}
+
+.calendar .event.dinamicas:hover {
+  border: 2px solid #008080;
+}
+
+.calendar .event.dinamicas:after {
+  background: #008080;
+}
+
+.calendar .event.pimpollo a {
+  color: #7B68EE;
+}
+
+.calendar .event.pimpollo:hover {
+  border: 2px solid #7B68EE;
+}
+
+.calendar .event.pimpollo:after {
+  background: #7B68EE;
+}
+
+.calendar .event.losmuertos a {
+  color: #1E90FF;
+}
+
+.calendar .event.losmuertos:hover {
+  border: 2px solid #1E90FF;
+}
+
+.calendar .event.losmuertos:after {
+  background: #1E90FF;
+}
+
+.calendar .event.los90s a {
+  color: #20B2AA;
+}
+
+.calendar .event.los90s:hover {
+  border: 2px solid #20B2AA;
+}
+
+.calendar .event.los90s:after {
+  background: #20B2AA;
+}
+
+.calendar .event.mundocero a {
+  color: #48D1CC;
+}
+
+.calendar .event.mundocero:hover {
+  border: 2px solid #48D1CC;
+}
+
+.calendar .event.mundocero:after {
+  background: #48D1CC;
+}
+
+.calendar .event.hechizos a {
+  color: #3CB371;
+}
+
+.calendar .event.hechizos:hover {
+  border: 2px solid #3CB371;
+}
+
+.calendar .event.hechizos:after {
+  background: #3CB371;
+}
+
+.calendar .event a {
+  text-decoration: none;
 }

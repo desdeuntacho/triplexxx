@@ -24,10 +24,6 @@
   color: #7c8a95;
 }
 
-.calendar table tbody td:hover {
-  border: 2px solid #1c3764;
-}
-
 .calendar table td {
   border: 2px solid transparent;
   border-radius: 50%;
@@ -58,6 +54,10 @@
   position: relative;
 }
 
+.calendar .event:hover {
+  border: 2px solid #1c3764;
+}
+
 .calendar .event:after {
   background: #1c3764;
   border-radius: 50%;
@@ -73,4 +73,128 @@
 
 .calendar .event.current-day:after {
   background: #f9f9f9;
+}
+
+.calendar .event.libros a {
+  color: #8A2BE2;
+}
+
+.calendar .event.libros:hover {
+  border: 2px solid #8A2BE2;
+}
+
+.calendar .event.libros:after {
+  background: #8A2BE2;
+}
+
+.calendar .event.bingo a {
+  color: #DC143C;
+}
+
+.calendar .event.bingo:hover {
+  border: 2px solid #DC143C;
+}
+
+.calendar .event.bingo:after {
+  background: #DC143C;
+}
+
+.calendar .event.banquete a {
+  color: #FF7F50;
+}
+
+.calendar .event.banquete:hover {
+  border: 2px solid #FF7F50;
+}
+
+.calendar .event.banquete:after {
+  background: #FF7F50;
+}
+
+.calendar .event.escritura a {
+  color: #228B22;
+}
+
+.calendar .event.escritura:hover {
+  border: 2px solid #228B22;
+}
+
+.calendar .event.escritura:after {
+  background: #228B22;
+}
+
+.calendar .event.dinamicas a {
+  color: #008080;
+}
+
+.calendar .event.dinamicas:hover {
+  border: 2px solid #008080;
+}
+
+.calendar .event.dinamicas:after {
+  background: #008080;
+}
+
+.calendar .event.pimpollo a {
+  color: #7B68EE;
+}
+
+.calendar .event.pimpollo:hover {
+  border: 2px solid #7B68EE;
+}
+
+.calendar .event.pimpollo:after {
+  background: #7B68EE;
+}
+
+.calendar .event.losmuertos a {
+  color: #1E90FF;
+}
+
+.calendar .event.losmuertos:hover {
+  border: 2px solid #1E90FF;
+}
+
+.calendar .event.losmuertos:after {
+  background: #1E90FF;
+}
+
+.calendar .event.los90s a {
+  color: #20B2AA;
+}
+
+.calendar .event.los90s:hover {
+  border: 2px solid #20B2AA;
+}
+
+.calendar .event.los90s:after {
+  background: #20B2AA;
+}
+
+.calendar .event.mundocero a {
+  color: #48D1CC;
+}
+
+.calendar .event.mundocero:hover {
+  border: 2px solid #48D1CC;
+}
+
+.calendar .event.mundocero:after {
+  background: #48D1CC;
+}
+
+.calendar .event.hechizos a {
+  color: #3CB371;
+}
+
+.calendar .event.hechizos:hover {
+  border: 2px solid #3CB371;
+}
+
+.calendar .event.hechizos:after {
+  background: #3CB371;
+}
+
+.calendar .event a {
+  text-decoration: none;
 }
