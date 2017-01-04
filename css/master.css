@@ -129,9 +129,21 @@ body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg
   position: relative;
   float: left;
   z-index: 100;
-  width: 33.33%;
   height: 100%;
   cursor: pointer;
+}
+
+body main .row .bg-full .bg-1 {
+  margin-left: 6%;
+  width: 30%;
+}
+
+body main .row .bg-full .bg-2 {
+  width: 27%;
+}
+
+body main .row .bg-full .bg-3 {
+  width: 30%;
 }
 
 body main .row.mobile .logo {
