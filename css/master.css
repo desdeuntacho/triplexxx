@@ -119,6 +119,12 @@ body main .row .bg-full {
   z-index: 0;
 }
 
+@media (max-width: 768px) {
+  body main .row .bg-full {
+    display: none;
+  }
+}
+
 body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg-full .bg-3 {
   position: relative;
   float: left;
@@ -126,6 +132,52 @@ body main .row .bg-full .bg-1, body main .row .bg-full .bg-2, body main .row .bg
   width: 33.33%;
   height: 100%;
   cursor: pointer;
+}
+
+body main .row.mobile .logo {
+  width: 350px;
+  height: 350px;
+  margin: 0px;
+  background: url(img/sprite.png) no-repeat;
+  position: relative;
+  display: inline-block;
+}
+
+body main .row.mobile .logo span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(img/sprite.png) no-repeat;
+  background-position: -350px 0px;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+body main .row.mobile .logo span:hover, body main .row.mobile .logo span:focus, body main .row.mobile .logo span:active {
+  opacity: 1;
+}
+
+body main .row.mobile h2 {
+  text-decoration: underline;
+}
+
+body main .row.mobile h2 a {
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+}
+
+body main .row.mobile h2 a:hover, body main .row.mobile h2 a:focus, body main .row.mobile h2 a:active {
+  color: #d99fc7;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  body main .row.mobile {
+    display: none;
+  }
 }
 
 body main .row.texto h2 {
@@ -197,6 +249,7 @@ body main .row.imagen {
 }
 
 body main .row.imagen h2 {
+  margin-top: 50px;
   text-transform: uppercase;
 }
 
@@ -210,9 +263,17 @@ body main .row.imagen h2 a:hover, body main .row.imagen h2 a:focus {
   color: #d99fc7;
 }
 
+body main .row.imagen .thumbnail {
+  border: none;
+}
+
 body main .row.sede {
   margin-top: 30px;
   margin-bottom: 0px;
+}
+
+body main .row.sede .thumbnail {
+  border: none;
 }
 
 body footer {
@@ -231,42 +292,6 @@ body footer .row .pie h2 {
 body footer .row .pie p {
   text-align: center;
   font-size: 24px;
-}
-
-body footer .row a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-
-body footer .row a:hover h1 {
-  color: #d99fc7;
-}
-
-body footer .row a:hover .logo span {
-  opacity: 1;
-}
-
-body footer .row a h1 {
-  margin-left: 20px;
-  margin-bottom: 0px;
-  -webkit-transition: color 400ms ease-in-out;
-  transition: color 400ms ease-in-out;
-}
-
-body footer .row a h1:hover, body footer .row a h1:focus {
-  color: #d99fc7;
-}
-
-body footer .row section p {
-  padding: 0px 20px;
 }
 
 body.home main {
@@ -323,6 +348,14 @@ main.dulce {
   transition: border 300ms ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .calendar table td {
+    height: 2.5em;
+    line-height: 2.5em;
+    width: 2.5em;
+  }
+}
+
 .calendar .prev-month, .calendar .next-month {
   color: #cbd1d2;
 }
@@ -358,12 +391,30 @@ main.dulce {
   width: .5em;
 }
 
-.calendar .event.current-day:after {
-  background: #f9f9f9;
+@media (max-width: 767px) {
+  .calendar .event:after {
+    bottom: .25em;
+    display: block;
+    content: '';
+    height: .25em;
+    left: 50%;
+    margin: -.125em 0 0 -.125em;
+    position: absolute;
+    width: .25em;
+  }
 }
 
-.calendar .event.libros a {
-  color: #8A2BE2;
+.calendar .event a {
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.calendar .event.current-day:after {
+  background: #f9f9f9;
 }
 
 .calendar .event.libros:hover {
@@ -374,8 +425,8 @@ main.dulce {
   background: #8A2BE2;
 }
 
-.calendar .event.bingo a {
-  color: #DC143C;
+.calendar .event.libros a {
+  color: #8A2BE2;
 }
 
 .calendar .event.bingo:hover {
@@ -386,8 +437,8 @@ main.dulce {
   background: #DC143C;
 }
 
-.calendar .event.banquete a {
-  color: #FF7F50;
+.calendar .event.bingo a {
+  color: #DC143C;
 }
 
 .calendar .event.banquete:hover {
@@ -398,8 +449,8 @@ main.dulce {
   background: #FF7F50;
 }
 
-.calendar .event.escritura a {
-  color: #228B22;
+.calendar .event.banquete a {
+  color: #FF7F50;
 }
 
 .calendar .event.escritura:hover {
@@ -410,8 +461,8 @@ main.dulce {
   background: #228B22;
 }
 
-.calendar .event.dinamicas a {
-  color: #008080;
+.calendar .event.escritura a {
+  color: #228B22;
 }
 
 .calendar .event.dinamicas:hover {
@@ -422,8 +473,8 @@ main.dulce {
   background: #008080;
 }
 
-.calendar .event.pimpollo a {
-  color: #7B68EE;
+.calendar .event.dinamicas a {
+  color: #008080;
 }
 
 .calendar .event.pimpollo:hover {
@@ -434,8 +485,8 @@ main.dulce {
   background: #7B68EE;
 }
 
-.calendar .event.losmuertos a {
-  color: #1E90FF;
+.calendar .event.pimpollo a {
+  color: #7B68EE;
 }
 
 .calendar .event.losmuertos:hover {
@@ -446,8 +497,8 @@ main.dulce {
   background: #1E90FF;
 }
 
-.calendar .event.los90s a {
-  color: #20B2AA;
+.calendar .event.losmuertos a {
+  color: #1E90FF;
 }
 
 .calendar .event.los90s:hover {
@@ -458,8 +509,8 @@ main.dulce {
   background: #20B2AA;
 }
 
-.calendar .event.mundocero a {
-  color: #48D1CC;
+.calendar .event.los90s a {
+  color: #20B2AA;
 }
 
 .calendar .event.mundocero:hover {
@@ -470,8 +521,8 @@ main.dulce {
   background: #48D1CC;
 }
 
-.calendar .event.hechizos a {
-  color: #3CB371;
+.calendar .event.mundocero a {
+  color: #48D1CC;
 }
 
 .calendar .event.hechizos:hover {
@@ -482,6 +533,6 @@ main.dulce {
   background: #3CB371;
 }
 
-.calendar .event a {
-  text-decoration: none;
+.calendar .event.hechizos a {
+  color: #3CB371;
 }

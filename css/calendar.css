@@ -36,6 +36,14 @@
   transition: border 300ms ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .calendar table td {
+    height: 2.5em;
+    line-height: 2.5em;
+    width: 2.5em;
+  }
+}
+
 .calendar .prev-month, .calendar .next-month {
   color: #cbd1d2;
 }
@@ -71,12 +79,30 @@
   width: .5em;
 }
 
-.calendar .event.current-day:after {
-  background: #f9f9f9;
+@media (max-width: 767px) {
+  .calendar .event:after {
+    bottom: .25em;
+    display: block;
+    content: '';
+    height: .25em;
+    left: 50%;
+    margin: -.125em 0 0 -.125em;
+    position: absolute;
+    width: .25em;
+  }
 }
 
-.calendar .event.libros a {
-  color: #8A2BE2;
+.calendar .event a {
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.calendar .event.current-day:after {
+  background: #f9f9f9;
 }
 
 .calendar .event.libros:hover {
@@ -87,8 +113,8 @@
   background: #8A2BE2;
 }
 
-.calendar .event.bingo a {
-  color: #DC143C;
+.calendar .event.libros a {
+  color: #8A2BE2;
 }
 
 .calendar .event.bingo:hover {
@@ -99,8 +125,8 @@
   background: #DC143C;
 }
 
-.calendar .event.banquete a {
-  color: #FF7F50;
+.calendar .event.bingo a {
+  color: #DC143C;
 }
 
 .calendar .event.banquete:hover {
@@ -111,8 +137,8 @@
   background: #FF7F50;
 }
 
-.calendar .event.escritura a {
-  color: #228B22;
+.calendar .event.banquete a {
+  color: #FF7F50;
 }
 
 .calendar .event.escritura:hover {
@@ -123,8 +149,8 @@
   background: #228B22;
 }
 
-.calendar .event.dinamicas a {
-  color: #008080;
+.calendar .event.escritura a {
+  color: #228B22;
 }
 
 .calendar .event.dinamicas:hover {
@@ -135,8 +161,8 @@
   background: #008080;
 }
 
-.calendar .event.pimpollo a {
-  color: #7B68EE;
+.calendar .event.dinamicas a {
+  color: #008080;
 }
 
 .calendar .event.pimpollo:hover {
@@ -147,8 +173,8 @@
   background: #7B68EE;
 }
 
-.calendar .event.losmuertos a {
-  color: #1E90FF;
+.calendar .event.pimpollo a {
+  color: #7B68EE;
 }
 
 .calendar .event.losmuertos:hover {
@@ -159,8 +185,8 @@
   background: #1E90FF;
 }
 
-.calendar .event.los90s a {
-  color: #20B2AA;
+.calendar .event.losmuertos a {
+  color: #1E90FF;
 }
 
 .calendar .event.los90s:hover {
@@ -171,8 +197,8 @@
   background: #20B2AA;
 }
 
-.calendar .event.mundocero a {
-  color: #48D1CC;
+.calendar .event.los90s a {
+  color: #20B2AA;
 }
 
 .calendar .event.mundocero:hover {
@@ -183,8 +209,8 @@
   background: #48D1CC;
 }
 
-.calendar .event.hechizos a {
-  color: #3CB371;
+.calendar .event.mundocero a {
+  color: #48D1CC;
 }
 
 .calendar .event.hechizos:hover {
@@ -195,6 +221,6 @@
   background: #3CB371;
 }
 
-.calendar .event a {
-  text-decoration: none;
+.calendar .event.hechizos a {
+  color: #3CB371;
 }
