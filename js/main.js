@@ -40,4 +40,6 @@ $(function () {
 	function() {
 			$(imagen).stop(true, true).fadeTo(400, 0);
 	});
+
+	$('.event a').popover();
 });

@@ -193,7 +193,8 @@ body main .row.mobile h2 a:hover, body main .row.mobile h2 a:focus, body main .r
 }
 
 body main .row.texto h2 {
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
   text-decoration: underline;
 }
 
@@ -218,6 +219,10 @@ body main .row.texto .def p:first-child {
   margin-top: 25px;
   font-size: 16px;
   color: #1c3764;
+}
+
+body main .row.texto .prem p:first-child {
+  margin-top: 40px;
 }
 
 body main .row.texto .prem span {
@@ -275,17 +280,13 @@ body main .row.imagen h2 a:hover, body main .row.imagen h2 a:focus {
   color: #d99fc7;
 }
 
-body main .row.imagen .thumbnail {
+body main .thumbnail {
   border: none;
 }
 
 body main .row.sede {
   margin-top: 30px;
   margin-bottom: 0px;
-}
-
-body main .row.sede .thumbnail {
-  border: none;
 }
 
 body footer {
@@ -304,6 +305,29 @@ body footer .row .pie h2 {
 body footer .row .pie p {
   text-align: center;
   font-size: 24px;
+}
+
+body footer .convocatoria {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+body footer .convocatoria h2 {
+  text-decoration: none;
+  text-align: center;
+}
+
+body footer .convocatoria h2 a {
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+}
+
+body footer .convocatoria h2 a:hover, body footer .convocatoria h2 a:focus {
+  color: #d99fc7;
+}
+
+body footer .sponsor {
+  margin-top: 30px;
 }
 
 body.home main {
@@ -547,4 +571,16 @@ main.dulce {
 
 .calendar .event.hechizos a {
   color: #3CB371;
+}
+
+.calendar .event.artecomercial:hover {
+  border: 2px solid #CD5C5C;
+}
+
+.calendar .event.artecomercial:after {
+  background: #CD5C5C;
+}
+
+.calendar .event.artecomercial a {
+  color: #CD5C5C;
 }

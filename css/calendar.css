@@ -224,3 +224,15 @@
 .calendar .event.hechizos a {
   color: #3CB371;
 }
+
+.calendar .event.artecomercial:hover {
+  border: 2px solid #CD5C5C;
+}
+
+.calendar .event.artecomercial:after {
+  background: #CD5C5C;
+}
+
+.calendar .event.artecomercial a {
+  color: #CD5C5C;
+}
